@@ -1,0 +1,462 @@
+/*
+Theme Name: Simple Art
+Author: Alberto Blazquez
+Author URI: http://albertoblazquez.net/
+Description: A simple and minimalist portfolio theme (art and photography). If you have some questions or issues, contact me :)
+Tags: Portfolio, Minimalist, Simple, Art, Photography
+*/
+	
+
+/* MAIN STYLES
+-------------------------------------------*/
+
+* { margin: 0; padding: 0; }
+
+body {
+	background-color: white;
+	font-weight: normal;
+	font-family: 'Muli', Helvetica, sans-serif;
+	font-size: 15px;
+	color:#333;
+	line-height:135%;
+	text-align: justify;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration:none;
+	color: #697BF0;
+	padding: 1px 3px 2px;
+	margin: -1px -3px -2px;
+	border-radius: 7px;
+	-webkit-transition: color .1s ease-out, background .2s ease-out, text-shadow .1s ease-out;
+	-moz-transition: color .1s ease-out, background .2s ease-out, text-shadow .1s ease-out;
+	-o-transition: color .1s ease-out, background .2s ease-out, text-shadow .1s ease-out;
+	transition: color .1s ease-out, background .2s ease-out, text-shadow .1s ease-out;
+}
+
+a:visited {
+	color: #697BF0;
+}
+
+a:hover, a:focus {
+	background-color: #697BF0;
+	color: white;
+}
+
+a img { border: none; }
+
+p {
+	margin:0 0 1.5em;
+}
+
+h1, h2, h3 {
+	font-family:'Shanti';
+	font-weight:normal;
+	font-size:23px;
+	letter-spacing:-1px;
+	line-height:100%;
+	padding-bottom:30px;
+}
+
+h2 {
+	font-size:21px;
+	padding-bottom:20px;
+}
+
+h3 {
+	font-size:20px;
+	padding-bottom:10px;
+}
+
+blockquote {
+	padding-left:80px;
+	margin:20px 0 15px 0;
+	padding-top:20px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	background:url(images/background/bk_blockquote.png) 0 15px no-repeat;
+	border-top:1px dotted #ddd;
+	border-bottom:1px dotted #ddd;
+}
+
+
+/* LAYOUT STRUCTURE
+--------------------------------------------------*/
+
+#wrapper {
+	margin:0 auto;
+	width:960px;
+}
+
+.clear {
+	clear:both;
+}
+
+#content {
+	overflow:hidden;
+	margin-top:45px;
+}
+
+#slides {
+	overflow:hidden;
+}
+
+.slide{
+	float:left;
+	width:960px;
+}
+
+
+/* HEADER ELEMENTS
+-----------------------------------*/
+
+header {
+	padding: 35px 0 10px 0;
+}
+
+header #logo {
+	float: left;
+}
+
+header #logo a:hover {
+	background:transparent;
+}
+
+header nav {
+	float:right;
+	padding-top: 10px;
+}
+
+header nav ul {
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav p {
+	margin:0;
+}
+
+header .menuItem a {
+	display:block;
+	color: #697BF0;
+	padding: 10px;
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+header .menuItem a:hover {
+	color:white;
+}
+
+header .act a {
+	background-color: #697BF0;
+	color: white;
+}
+
+
+/* CONTENT ELEMENTS
+-----------------------------------*/
+
+#content #home_img {			/* HOME CONTENT */
+	width:425px;
+	height:275px;
+	float:left;
+	padding:7px;
+	background-color:#EBEBEB;
+}
+
+#content #home_text {
+	width:475px;
+	float:right;
+}
+
+#content #home_text p {
+	margin: 0 0 1em;
+}
+
+#content #home_p {
+	margin: 0 0 0.5em;
+}
+
+#content #portfolio {			/* PORTFOLIO CONTENT */
+	width: 900px;	
+	margin: 0 auto;
+}
+
+#content #portfolio p {
+	margin:0;
+}
+
+#content #portfolio br {
+	display:none;
+}
+
+#content #portfolio a:hover {
+	background:transparent;
+}
+
+#content #portfolio img {
+	float:left;
+	margin: 0 3px 6px 3px;
+	width:144px;
+	height:96px;
+}
+
+#content #colLeft {			/* CONTACT CONTENT */
+	float:left;
+	width:655px;
+}
+
+#content #colRight {
+	float:right;
+	width:225px;
+	padding-top:5px;
+}
+
+#content #colRight h2 {
+	padding-bottom:25px;
+}
+
+#content #colRight p {
+	margin: 0 0 1em;
+}
+
+
+/* FOOTER ELEMENTS
+-----------------------------------*/
+
+footer {
+	background: url(images/background/bk_horiz_line.jpg) 0 0 repeat-x;
+	color: #888;
+	position: relative;
+	font-family: 'Muli', Helvetica, sans-serif;
+	font-size: 13px;
+	margin-top:40px;
+	padding:3px 0 60px 0;
+}
+
+footer div {
+	padding-top: 10px;
+}
+
+footer div p {
+	float: left;
+	margin: 0;
+}
+
+footer div ul {
+	float: right;
+}
+
+footer div ul li {
+	display: inline;
+	float: left;
+}
+
+footer div ul li a {
+	float: right;
+	margin-left: 3px;
+	border-radius: 3px;
+	-webkit-transition: color .1s ease-out, background .2s ease-out, margin .2s ease-out, text-shadow .1s ease-out;
+	-moz-transition: color .1s ease-out, background .2s ease-out, margin .2s ease-out, text-shadow .1s ease-out;
+	-o-transition: color .1s ease-out, background .2s ease-out, margin .2s ease-out, text-shadow .1s ease-out;
+	transition: color .1s ease-out, background .2s ease-out, margin .2s ease-out, text-shadow .1s ease-out;
+}
+
+footer ul li a:hover {
+	margin-top: -7px;
+	background:transparent;
+}
+
+footer div ul li a img {
+	height: 20px;
+}
+
+
+/* COMMENTS
+-----------------------------------*/
+
+ul.commentlist {
+	list-style:none;
+	list-style-position:outside;
+	display:block;
+	margin:0 0 20px;
+	border-top:3px solid #D2D8DB;
+	border-bottom:4px solid #D2D8DB;
+	padding:0;
+	padding-bottom:10px;
+}
+
+ul.commentlist ul {
+	list-style-type:none;
+	list-style-position:outside;
+	margin:0;
+}
+
+ul.commentlist li {
+	padding:20px 0 10px 50px;
+	position:relative;
+	margin-top:0;
+	background:url(images/background/bk_horiz_line.jpg) 0 0 repeat-x;
+}
+
+ul.commentlist li img {
+	border:none;
+}
+
+ul.commentlist li p{
+	font-size:14px;
+	margin:10px 0;
+}
+
+ul.commentlist li .comment-meta, ul.commentlist li .text  {
+	margin-left:20px;	
+}
+
+ul.commentlist li .comment-meta span {
+	padding-left:5px;
+	font-size:12px;
+	color:#999;
+}
+
+ul.commentlist li .comment-meta {
+	font-size:16px;
+}
+
+
+ul.commentlist li .gravatar {
+	position:absolute;
+	width:50px;
+	height:50px;
+	top:20px;
+	left:0;
+}
+
+ul.commentlist li .gravatar .gravatar_mask {
+	position:absolute;
+	left:0;
+	top:0;
+	width:50px;
+	height:50px;
+}
+
+ul.commentlist .reply {
+	position:absolute;
+	right:35px;
+	top:25px;
+	width:46px;
+	height:21px;
+	text-align:center;
+	font-size:14px;
+}
+
+ul.commentlist .reply a {
+	display:block;
+	width:46px;
+	height:21px;
+	font-style:italic;
+}
+
+ul.commentlist .reply a:hover {
+	text-decoration:none;
+	color:#333;
+}
+
+ul.commentlist li .children li {
+	margin-top:15px;
+	padding-top:25px;
+	border-bottom:none;
+	overflow:hidden;
+	padding-bottom:5px;
+}
+
+ul.commentlist li .children li .gravatar {
+	top:20px;
+}
+
+ul.commentlist li .children li .reply {
+	top:30px;
+}
+
+
+/* CONTACT AND COMMENT FORMS
+------------------------------------*/
+
+form div {
+	float:left;
+}
+
+form #message {
+	margin-top: 5px;
+}
+
+form #div_input_center {
+	margin: 0 31px 0 30px;
+}
+
+form p {
+	margin:0;
+}
+
+form label {
+	display:block;
+	padding:5px 0;
+}
+
+form input, form textarea {
+	border:1px solid #ddd;
+	border-radius:4px;
+	padding:8px;
+	margin-bottom:10px;
+	width:180px;
+	height:10px;
+}
+
+form input:focus, form textarea:focus {
+	border:1px solid #0099FF;
+}
+
+form textarea {
+	width:638px;
+	height:120px;
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+form input[type="submit"]{
+	border:none;
+	width:151px;
+	height:32px;
+	margin-top:10px;
+	cursor:pointer;
+	background-color:#697BF0;
+	color:white;
+	font-size:15px;
+	padding:0;
+}
+
+.errormsg, .successmsg{	/* classes used when AJAX is invoked at sending an email */
+	background:#FEF4F1;
+	border:1px solid #F7A68A;
+	color:#DA4310;
+	padding:10px;
+	border-radius:4px;
+}
+
+.successmsg {			/* classes used when AJAX is invoked at sending an email */
+	background:#F5FAF1;
+	border:1px solid #C2E1AA;
+	color:#8FA943;
+	border-radius:4px;
+}
+
