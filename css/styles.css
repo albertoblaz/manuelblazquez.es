@@ -5,7 +5,7 @@ Author URI: http://albertoblazquez.net/
 Description: A simple and minimalist portfolio theme (art and photography). If you have some questions or issues, contact me :)
 Tags: Portfolio, Minimalist, Simple, Art, Photography
 */
-	
+
 
 /* MAIN STYLES
 -------------------------------------------*/
@@ -13,7 +13,11 @@ Tags: Portfolio, Minimalist, Simple, Art, Photography
 * { margin: 0; padding: 0; }
 
 body {
-	background-color: white;
+	background: rgba(225, 225, 225, 0.3) url('../images/background/background.jpg') repeat fixed left top;
+	background: -webkit-radial-gradient( ellipse, rgba(255, 255, 255, 0), rgba(210, 210, 210, 0.3) ) no-repeat fixed center center, url('../images/background/background.jpg') repeat fixed left top;
+	background: -moz-radial-gradient( ellipse, rgba(255, 255, 255, 0), rgba(210, 210, 210, 0.3) ) no-repeat fixed center center, url('../images/background/background.jpg') repeat fixed left top;
+	background: -ms-radial-gradient( ellipse, rgba(255, 255, 255, 0), rgba(210, 210, 210, 0.3) ) no-repeat fixed center center, url('../images/background/background.jpg') repeat fixed left top;
+	background: radial-gradient( ellipse, rgba(255, 255, 255, 0), rgba(210, 210, 210, 0.3) ) no-repeat fixed center center, url('../images/background/background.jpg') repeat fixed left top;
 	font-weight: normal;
 	font-family: 'Muli', Helvetica, sans-serif;
 	font-size: 15px;
@@ -78,7 +82,7 @@ blockquote {
 	padding-top:20px;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-style:italic;
-	background:url(images/background/bk_blockquote.png) 0 15px no-repeat;
+	background:url(../images/background/bk_blockquote.png) 0 15px no-repeat;
 	border-top:1px dotted #ddd;
 	border-bottom:1px dotted #ddd;
 }
@@ -189,7 +193,7 @@ header .act a {
 }
 
 #content #portfolio {			/* PORTFOLIO CONTENT */
-	width: 900px;	
+	width: 900px;
 	margin: 0 auto;
 }
 
@@ -236,7 +240,7 @@ header .act a {
 -----------------------------------*/
 
 footer {
-	background: url(images/background/bk_horiz_line.jpg) 0 0 repeat-x;
+	background: url(../images/background/bk_horiz_line.jpg) 0 0 repeat-x;
 	color: #888;
 	position: relative;
 	font-family: 'Muli', Helvetica, sans-serif;
@@ -307,7 +311,7 @@ ul.commentlist li {
 	padding:20px 0 10px 50px;
 	position:relative;
 	margin-top:0;
-	background:url(images/background/bk_horiz_line.jpg) 0 0 repeat-x;
+	background:url(../images/background/bk_horiz_line.jpg) 0 0 repeat-x;
 }
 
 ul.commentlist li img {
@@ -320,7 +324,7 @@ ul.commentlist li p{
 }
 
 ul.commentlist li .comment-meta, ul.commentlist li .text  {
-	margin-left:20px;	
+	margin-left:20px;
 }
 
 ul.commentlist li .comment-meta span {
